@@ -122,9 +122,9 @@ def acercaDe():
 
 
 def img_resource_path(relative_path):
-    """ Get absolute path to resource, works for dev and for PyInstaller """
+    """ Obtiene el path para los archivos externos ya sea para el archivo .py o .exe """
     try:
-        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        # PyInstaller crea un folder temp y almacena el path en _MEIPASS
         base_path = sys._MEIPASS
     except Exception:
         base_path = os.path.abspath(".")
@@ -279,11 +279,13 @@ root.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_c
 
 root.mainloop()
 
-# Crear el .spec:
+# # =============CENTRAR EL EJECUTABLE==============
+
+# Crear el .spec (en consola):
 # pyi-makespec --windowed --onefile --icon .\resources\icono_windows.ico formulario_libros_leidos.py
 
-# Agregar en la lis datas del .spec:
+# Agregar en la lista datas (del archivo .spec):
 # ('resources/libros.gif', 'resources'), ('resources/libros_icono.ico', 'resources')
 
-# Crear el .exe una vez modificado el .spec:
+# Crear el .exe una vez modificado el .spec (en la consola):
 # pyintaller pyinstaller formulario_libros_leidos.spec
