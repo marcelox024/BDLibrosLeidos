@@ -279,7 +279,7 @@ root.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_c
 
 root.mainloop()
 
-# # =============CENTRAR EL EJECUTABLE==============
+# # =============CREAR EL EJECUTABLE==============
 
 # Crear el .spec (en consola):
 # pyi-makespec --windowed --onefile --icon .\resources\icono_windows.ico formulario_libros_leidos.py
