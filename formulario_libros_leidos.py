@@ -279,12 +279,12 @@ root.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_c
 
 root.mainloop()
 
-# # =============CENTRAR EL EJECUTABLE==============
+# # =============CREAR EL EJECUTABLE==============
 
 # Crear el .spec (en consola):
 # pyi-makespec --windowed --onefile --icon .\resources\icono_windows.ico formulario_libros_leidos.py
 
-# Agregar en la lista datas (del archivo .spec):
+# Agregar en la lista datas (en el archivo .spec):
 # ('resources/libros.gif', 'resources'), ('resources/libros_icono.ico', 'resources')
 
 # Crear el .exe una vez modificado el .spec (en la consola):
