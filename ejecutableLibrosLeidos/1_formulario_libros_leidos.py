@@ -282,10 +282,10 @@ root.mainloop()
 # # =============CREAR EL EJECUTABLE==============
 
 # Crear el .spec (en consola):
-# pyi-makespec --windowed --onefile --icon .\resources\icono_windows.ico formulario_libros_leidos.py
+# pyi-makespec --windowed --onefile --icon .\resources\icono_windows.ico 1_formulario_libros_leidos.py
 
-# Agregar en la lista datas (en el archivo .spec):
+# Agregar en la lista 'datas' (en el archivo .spec):
 # ('resources/libros.gif', 'resources'), ('resources/libros_icono.ico', 'resources')
 
 # Crear el .exe una vez modificado el .spec (en la consola):
-# pyintaller pyinstaller formulario_libros_leidos.spec
+# pyintaller pyinstaller 1_formulario_libros_leidos.spec
